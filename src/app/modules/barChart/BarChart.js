@@ -6,14 +6,6 @@ window.onload = function() {
         .domain([0, d3.max(data)])
         .range([0, width]);
 
-    /* Used for div chart */
-    d3.select(".chart")
-        .selectAll("div")
-            .data(data)
-        .enter().append("div")
-            .style("width", function(d) { return x(d) + "px"; })
-            .text(function (d) { return d; });
-
     /* Used for SVG chart */
     var barHeight = 20;
 
