@@ -6,3 +6,13 @@
     margin: 1px;
     padding: 3px;
 }
+
+.svg-chart rect {
+    fill: #5b22c3;
+}
+
+.svg-chart text {
+    fill: white;
+    font: .8em sans-serif;
+    text-anchor: end;
+}
